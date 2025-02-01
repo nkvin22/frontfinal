@@ -10,7 +10,7 @@
  <!-- Sign Up Bar -->
 <div class="signup-bar">
     <p>Sign up and get 20% off to your first order. <a href="#">Sign Up Now</a></p>
-    <img src="./assets/header/x.png" alt="off"> 
+    <img src="/assets/header/x.png" alt="off"> 
   </div>
 
 <!-- HEADER-->
@@ -27,13 +27,18 @@
 
       <div class="search-bar">
           <img src="assets/header/search.png" alt="Search" class="search-icon">
-          <input type="text" placeholder="Search for products...">
+          <input type="text" id="search-input" placeholder="Search for products...">
       </div>
 
       <img src="assets/header/cart.png" alt="Cart and Account" class="nav-icons">
+
+      <img class="burger-menu" src="assets/header/burger.png" alt="burger menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
   </div>
 </header>
-
 
   <!-- Hero Section -->
   <section class="hero">
@@ -140,18 +145,16 @@
 </section>
 
 
-<section class="newsletter">
-  <div class="newsletter-text">
-      <h2>STAY UPTO DATE ABOUT<br>OUR LATEST OFFERS</h2>
-  </div>
+<div class="newsletter">
+  <h2>STAY UPTO DATE ABOUT <br> OUR LATEST OFFERS</h2>
   <div class="newsletter-container">
       <div class="newsletter-input-wrapper">
-          <img src="assets/footer icons/mail.png" alt="Email Icon" class="email-icon">
+          <span class="email-icon">&#9993;</span>
           <input type="text" class="newsletter-input" placeholder="Enter your email address">
       </div>
       <button class="newsletter-button">Subscribe to Newsletter</button>
   </div>
-</section>
+</div>
 
 
 <footer class="footer">
@@ -227,5 +230,6 @@
 
 
   <script src="script.js"></script>
+
 </body>
 </html>

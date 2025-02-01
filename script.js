@@ -1,5 +1,7 @@
 const productsGrid = document.getElementById("products-grid");
-const searchInput = document.getElementById("search-bar");
+const searchInput = document.getElementById("search-input");
+
+
 
 function fetchProducts() {
   fetch("https://fakestoreapi.com/products")
@@ -19,6 +21,7 @@ function fetchProducts() {
       })
       .catch(error => console.error("Error fetching products:", error));
 }
+
 
 function displayProducts(products) {
   const productsGrid = document.getElementById("products-grid"); 
