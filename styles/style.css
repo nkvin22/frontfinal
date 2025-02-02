@@ -677,7 +677,6 @@ color: #716f6f;
   transition: all 0.3s ease-in-out;
 }
 
-
 @media (max-width: 391px) {
   .signup-bar {
     height: 30px;
@@ -745,7 +744,8 @@ color: #716f6f;
   }
 
 }
-  @media (max-width: 391px) {
+
+@media (max-width: 391px) {
     .hero {
       display: flex;
       flex-direction: column;
@@ -786,6 +786,7 @@ color: #716f6f;
     }
 }
 
+@media (max-width: 391px) {
 .hero-stats {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
@@ -1035,7 +1036,7 @@ color: #716f6f;
     font-size: 22px; 
     line-height: 1.4;
     text-align: start; 
-
+  }
   .newsletter-container {
     width: 100%; 
     align-items: center; 
