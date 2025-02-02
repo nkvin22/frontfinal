@@ -132,14 +132,14 @@ body, h1, h2, p {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; /* Wrap logos on smaller screens */
+  flex-wrap: wrap; 
   background-color: black;
-  gap: 30px; /* Reduce spacing to fit small scrss */
+  gap: 30px;
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
   padding: 10px 15px;
-  box-sizing: border-box; /* Prevents overflow */
+  box-sizing: border-box; 
   overflow: hidden;
 }
 
@@ -230,8 +230,8 @@ body, h1, h2, p {
 .hero-stats h2{
   
   font-family: 'Montserrat Alternates', sans-serif;
-  font-size: 30px; /* Adjust size */
-  font-weight: 700; /* Bold */
+  font-size: 30px; 
+  font-weight: 700; 
 }
 .hero-stats p{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -556,7 +556,7 @@ body, h1, h2, p {
   flex: 1;
   font-size: 14px;
   width: 100%;
-  padding-left: 35px; /* Adjusted so text doesn’t overlap the icon */
+  padding-left: 35px; 
   background: transparent;
   color: gray;
 }
