@@ -16,30 +16,37 @@ body, h1, h2, p {
   
 
  /* Sign Up Bar */
-.signup-bar {
+ .signup-bar {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   position: relative;
   color: white;
   background-color: black;
-  width: 1440px;
-  height:38px;
-  width: 100%;
+  height: 38px;
   margin: 0 auto;
-  }
+  box-sizing: border-box;
+  width: 100vw; 
+  max-width: 100%;
+  overflow: hidden; 
+  padding: 0 15px;
+
+}
+
 .signup-bar p{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-  .signup-bar a {
+
+
+.signup-bar a {
     color: #fff;
     text-decoration: underline;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-  }
-  .signup-bar img {
+  
+}
+.signup-bar img {
     position: absolute;
-    right: 200px;
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
@@ -123,23 +130,23 @@ body, h1, h2, p {
 /* Brand Logos Section */
 .brand-logos {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
-  position: relative;
-  color: white;
+  flex-wrap: wrap; /* Wrap logos on smaller screens */
   background-color: black;
-  /* padding:20px; */
-  width: 1440px;
-  gap: 80px;
-  height:122px;
+  gap: 30px; /* Reduce spacing to fit small scrss */
   width: 100%;
+  max-width: 100%;
   margin: 0 auto;
+  padding: 10px 15px;
+  box-sizing: border-box; /* Prevents overflow */
+  overflow: hidden;
 }
 
 
 .logo-top {
    align-self: flex-start;
-   padding-top: 5px;
+  
 }
 
 .logo-center {
@@ -685,6 +692,7 @@ color: #716f6f;
     display: flex;
     justify-content: left;
     padding-left: 30px;
+
   
   }
 
@@ -1053,4 +1061,104 @@ color: #716f6f;
 }
 
 
+
 }
+
+@media (max-width: 391px) {
+  .footer {
+    padding: 30px 15px;
+  }
+
+  .footer-left {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .footer-left p {
+    font-size: 14px;
+    color: #716f6f;
+    max-width: 90%;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .social-icons img {
+    width: 22px;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    text-align: left;
+    width: 75%;
+  }
+  
+  .footer-column {
+    min-width: auto;
+  }
+  
+  .footer-column h4 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-column ul li {
+    margin-bottom: 6px;
+  }
+
+  .footer-column ul li a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #716f6f;
+  }
+  
+ 
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 20px;
+    
+  }
+  
+  .footer-bottom p {
+    font-size: 12px;
+    color: #716f6f;
+  }
+  
+  .payment-icons {
+    display: flex;
+    gap: 4px;
+    margin-top: 10px;
+  }
+
+  .payment-icons img {
+    width: 40px;
+  }
+}
+
+
